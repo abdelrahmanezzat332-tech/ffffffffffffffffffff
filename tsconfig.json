@@ -1,21 +1,21 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{ts,tsx}"],
-  theme: {
-    extend: {
-      colors: {
-        aura: {
-          ink: "#101827",
-          navy: "#17213d",
-          plum: "#392554",
-          gold: "#c9a24a",
-          mist: "#f6f4ef"
-        }
-      },
-      boxShadow: {
-        soft: "0 16px 45px rgba(16, 24, 39, 0.08)"
-      }
-    }
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
-  plugins: []
-};
+  "include": ["src"],
+  "references": []
+}
